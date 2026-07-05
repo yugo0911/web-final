@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
-  <title>大学生活メモ</title>
+  <title>川角キャンパスメモ</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>大学生活メモ</h1>
+
+  <header>
+    <h1>川角キャンパスメモ</h1>
+    <p>大学生活で気づいたことをまとめた小さなWebサイトです。</p>
+  </header>
 
   <nav>
     <a href="index.html">ホーム</a>
-    <a href="page2.html">授業メモ</a>
+    <a href="campus.html">キャンパスメモ</a>
   </nav>
 
-  <img src="images/study.jpg" alt="大学生活の写真">
+  <main>
+    <section class="top">
+      <div class="top-text">
+        <h2>このサイトについて</h2>
+        <p>
+          このサイトは、情報学特講の最終課題として作成しました。
+          普段の大学生活の中で感じたことや、空き時間の過ごし方などを
+          自分なりにまとめています。
+        </p>
+        <p>
+          大きなテーマではありませんが、実際に自分が通っている場所や
+          日常を題材にすることで、自分らしいWebサイトになるようにしました。
+        </p>
+      </div>
 
-  <h2>このサイトについて</h2>
-  <p>
-    このサイトは、大学生活で感じたことを簡単にまとめたページです。
-    HTMLとCSSを使って、見やすいWebページになるように作りました。
-  </p>
+      <img src="images/campus.jpg" alt="キャンパスの写真">
+    </section>
 
-  <h2>工夫したところ</h2>
-  <p>
-    文字の色や背景色を変えて、読みやすくしました。
-    また、別のページに移動できるようにリンクも作りました。
-  </p>
+    <section>
+      <h2>作成で意識したこと</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>見やすさ</h3>
+          <p>
+            文章を詰め込みすぎず、余白を作って読みやすくしました。
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>自分らしさ</h3>
+          <p>
+            大学生活の中で実際に感じたことをテーマにしました。
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>授業内容</h3>
+          <p>
+            HTML、CSS、画像、リンク、JavaScriptを使いました。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="memo-box">
+      <h2>今日のひとことメモ</h2>
+      <p id="todayMemo">ボタンを押すと、ちょっとしたメモが表示されます。</p>
+      <button onclick="showMemo()">メモを見る</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>情報学特講Ⅰ 最終課題</p>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>
