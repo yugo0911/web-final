@@ -1,1 +1,39 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: sans-serif;
+  margin: 30px;
+}
 
+h1 {
+  color: #2f5d8c;
+  border-bottom: 2px solid #2f5d8c;
+}
+
+h2 {
+  color: #444;
+  margin-top: 30px;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  background-color: #2f5d8c;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.7;
+}
